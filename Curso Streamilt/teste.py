@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 
 st.title("DASHBOARD DE VENDAS:shopping_trolley:")
-url = "https://labdados.com/produtos?regiao=norte&ano=2022"
+url = "https://labdados.com/produtos"
 response = requests.get(url)
 df = pd.DataFrame.from_dict(response.json())
 if st.button("todos"):
